@@ -91,9 +91,56 @@ section h3 {
 }
 
 .participants-section ul {
-  list-style-position: inside;
+  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.participants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+}
+
+.participant-email {
+  color: #555;
+  font-size: 14px;
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #d32f2f;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
+  color: #b71c1c;
 }
 
 .participants-section ul li {
